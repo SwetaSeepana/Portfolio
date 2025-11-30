@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seepana Sweta | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.xml" type="image/xml">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- HEADER-GRID -->
+    <header class="S-header">
+    <div class="S-container">
+
+        <!-- LEFT SECTION -->
+       <div class="S-left">
+       <button class="download-btn" onclick="downloadResume()">My Resume</button>
+       </div>
+
+
+        <!-- RIGHT MENU -->
+        <div class="S-right">
+            <nav class="S-menu">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            
+        </div>
+
+    </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+    <div class="hero-container">
+
+        <!-- LEFT TEXT SECTION -->
+        <div class="hero-left">
+            <h1>Hello, I'm <span>Sweta</span></h1>
+            <p>Computer Science Student | Developer | Tech Enthusiast</p>
+            <a href="#contact-grid" class="hero-btn">Contact Me</a>
+        </div>
+
+        <!-- RIGHT IMAGE SECTION -->
+        <div class="hero-right">
+            <img src="images/Hero-Image.png" alt="Sweta Image">
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I am Seepana Sweta, a Computer Science and Engineering student at VIT-AP University. I am passionate about building intelligent systems, solving real-world problems, and creating impactful digital experiences. I enjoy working with Web Development and Machine Learning, and I’m continuously exploring new technologies to expand my skills
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education">
+       <h2 class="edu-heading">
+    <i class="fa-solid fa-graduation-cap edu-icon"></i>
+    Education
+       </h2>
+
+
+        <div class="edu-card">
+            <h3>VIT-AP University| Andhra Pradesh, India</h3>
+            <p>B.Tech in Computer Science and Engineering</p>
+            <p><strong>CGPA:</strong> 8.96</p>
+            <span>2022 – 2026</span>
+        </div>
+
+        <div class="edu-card">
+            <h3>Sri Chaitanya Vidya Niketan| Andhra Pradesh, India</h3>
+            <p>Higher Secondary (MPC_IP), CBSE</p>
+            <p><strong>Percentage:</strong> 89%</p>
+            <span>2020 – 2022</span>
+        </div>
+
+        <div class="edu-card">
+            <h3>Sri Chaitanya EM School, Ramnagar, VSP| Andhra Pradesh, India</h3>
+            <p>Secondary Education</p>
+            <p><strong>Percentage:</strong> 100%</p>
+            <span>2020</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+        <h2 class="proj-heading">
+    <i class="fa-solid fa-diagram-project proj-icon"></i>
+    Projects
+</h2>
+
+
+        <div class="project-card">
+            <h3>Plant Disease Prediction</h3>
+            <p>Developed a CNN-based plant disease detection system with Streamlit UI. Packaged using Docker for easy deployment.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Hospital Management System</h3>
+            <p>Created a full-stack web application using HTML, CSS, JavaScript, Django, and MySQL to manage hospital operations.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Handwritten Digit Recognition</h3>
+            <p>CNN-based model trained on MNIST dataset achieving 98% accuracy in classifying handwritten digits.</p>
+        </div>
+    </section>
+<!-- SKILLS SECTION -->
+<section id="skills" class="skills-section">
+  <h2 class="skills-heading">
+    <i class="fa-solid fa-tools skills-icon"></i>
+    Skills
+</h2>
+
+
+    <div class="skills-grid">
+
+        <!-- Programming Languages -->
+        <div class="skill-box">
+            <div class="skill-header" onclick="toggleSkill(this)">
+                Programming Languages
+                <span class="arrow">▼</span>
+            </div>
+            <div class="skill-content">
+                <p>Java</p>
+                <p>Python</p>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+            </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="skill-box">
+            <div class="skill-header" onclick="toggleSkill(this)">
+                Tools & Technologies
+                <span class="arrow">▼</span>
+            </div>
+            <div class="skill-content">
+                <p>Git</p>
+                <p>GitHub</p>
+            </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-box">
+            <div class="skill-header" onclick="toggleSkill(this)">
+                Database
+                <span class="arrow">▼</span>
+            </div>
+            <div class="skill-content">
+                <p>MySQL</p>
+            </div>
+        </div>
+
+        <!-- Relevant Coursework -->
+        <div class="skill-box">
+            <div class="skill-header" onclick="toggleSkill(this)">
+                Relevant Coursework
+                <span class="arrow">▼</span>
+            </div>
+            <div class="skill-content">
+                <p>Data Structures & Algorithms</p>
+                <p>Operating Systems</p>
+                <p>Computer Networks</p>
+                <p>DBMS</p>
+                <p>OOPS</p>
+                <p>Machine Learning</p>
+                <p>NLP</p>
+            </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-box">
+            <div class="skill-header" onclick="toggleSkill(this)">
+                Soft Skills
+                <span class="arrow">▼</span>
+            </div>
+            <div class="skill-content">
+                <p>Communication</p>
+                <p>Teamwork</p>
+                <p>Leadership</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- CERTIFICATIONS -->
+    <section class="certifications">
+   <h2 class="cert-heading">
+    <i class="fa-solid fa-certificate cert-icon"></i>
+    Certifications
+</h2>
+
+
+    <div class="cert-grid">
+
+        <div class="cert-card">
+            <h3>Oracle Cloud Infrastructure 2025</h3>
+            <p>Generative AI Professional</p>
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=356A288B33E03E2A2959993028901354AC3A198D52C69E1DB9D403ECB60D1141" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+
+        <div class="cert-card">
+            <h3>Oracle Cloud Infrastructure 2023</h3>
+            <p>AI Foundations Associate</p>
+            <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=F8241F3D5639F12E4268FF9D5FA6154BA27E3224D41C1818123F00F415B6FC7F" target="_blank" class="view-btn">View Certificate</a>
+        </div>
+
+    </div>
+    </section>
+
+
+    <!-- CONTACT -->
+   <section id="contact-grid" class="contact-grid">
+    <div class="contact-card">
+        <h2>Contact</h2>
+
+        <p><i class="fa-solid fa-envelope"></i>
+            <a href="mailto:sweta.seepana14@gmail.com">sweta.seepana14@gmail.com</a>
+        </p>
+
+        <p><i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/sweta-seepana-67626034b/" target="_blank">LinkedIn</a>
+        </p>
+
+        <p><i class="fa-brands fa-github"></i>
+            <a href="https://github.com/SwetaSeepana" target="_blank">GitHub</a>
+        </p>
+    </div>
+</section>
+
+
+
+    <footer>
+        <p>© 2025 Seepana Sweta | Portfolio</p>
+    </footer>
+
+</body>
+</html>
